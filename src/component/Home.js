@@ -1,5 +1,4 @@
 import React from 'react'
-import ClassbasedCom from './ClassbasedCom'
 import ClassBCom from './ClassBCom'
 import Footer from './Footer'
 import FunBCom from './FunBCom'
@@ -9,9 +8,8 @@ function Home() {
     return (
         <div>
             <Header />
-            {/* <FunBCom /> */}
-            <ClassBCom />
-            {/* <ClassbasedCom /> */}
+            <FunBCom />
+            {/* <ClassBCom /> */}
             <Footer />
         </div>
     )

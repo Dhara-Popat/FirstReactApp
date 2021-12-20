@@ -17,14 +17,14 @@ export class ClassBCom extends Component {
         this.setState({
             loading: true
         })
-        axios.get(`https://newsapi.org/v2/everything?q=tesla&from=2021-12-20&sortBy=publishedAt&apiKey=ca89ac78d81a4c8bb2a30bb5a4aa0856`)
+        axios.get(`https://newsapi.org/v2/everything?q=tesla&from=2021-11-20&sortBy=publishedAt&apiKey=ca89ac78d81a4c8bb2a30bb5a4aa0856`)
             .then(res => {
                 const n = res.data;
                 console.log(n.articles);
                 const news = n.articles;
                 this.setState({ news })
                 this.setState({loading: false})
-            });
+            })
     }
 
 
@@ -34,16 +34,16 @@ export class ClassBCom extends Component {
             <div className="container my-3">
                 <h2>News - Top Headlines</h2>
                 <div className='row'>
-                    {!loading ?
-                        this.state.news.map((element, index) => {
-                            return <div className='col-md-4' key={index}>
-                                <NewsItem title={element.title.slice(0, 30)}
-                                    description={element.description.slice(0, 88)}
-                                    imageUrl={element.urlToImage}
-                                    newsUrl={element.url}
-                                />
-                            </div>
-                        }) : <Loading message="Loading..." />}
+                {!loading ?
+                 this.state.news.map((element, index) => {
+                        return <div className='col-md-4' key={index}>
+                            <NewsItem title={element.title.slice(0,30)}
+                                description={element.description.slice(0,88)}
+                                imageUrl={element.urlToImage}
+                                newsUrl={element.url}
+                            />
+                        </div>
+                    }) : <Loading message="Loading..." /> }                   
                 </div>
             </div>
         )
