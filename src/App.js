@@ -6,14 +6,14 @@ import Home from './component/Home';
 function App() {
   return (
     // <Router>
-      <div>
-        {/* <Routes>
-          <Route exact path='/' element={<Home />} />
-          <Route path='/about'  element={<About />} />
-        </Routes> */}
-        <Home />
-      </div>
+    //   <div>
+    //     <Routes>
+    //       <Route exact path='/' element={<Home />} />
+    //       <Route path='/about' element={<About />} />
+    //     </Routes>
+    //   </div>
     // </Router>
+    <Home />
   );
 }
 
