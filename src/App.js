@@ -9,10 +9,10 @@ import Mounting from './component/LifecycleMethods/Mounting';
 import Unmouting from './component/LifecycleMethods/Unmouting';
 import Updating from './component/LifecycleMethods/Updating';
 import PureComp from './component/Pure component/PureComp';
-import Container from './Rendering/Container';
-import RenderClickCounter from './Rendering/RenderClickCounter';
-import RenderHoverCounter from './Rendering/RenderHoverCounter';
-import User from './Rendering/User';
+import Container from './component/Rendering/Container';
+import RenderClickCounter from './component/Rendering/RenderClickCounter';
+import RenderHoverCounter from './component/Rendering/RenderHoverCounter';
+import User from './component/Rendering/User';
 // import About from './component/About';
 
 function App() {
