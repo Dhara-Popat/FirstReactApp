@@ -18,6 +18,7 @@ import UserContext, { UserProvider } from './component/Context/UserContext';
 import RefDemo from './component/Ref/RefDemo';
 import FocusInput from './component/Ref/FocusInput';
 import FRparentInput from './component/forwardingRef/FRparentInput';
+import ParentCom from './component/Pure component/ParentCom';
 // import About from './component/About';
 
 function App() {
@@ -73,7 +74,9 @@ function App() {
 
         {/* <FocusInput /> */}
 
-        <FRparentInput />
+        {/* <FRparentInput /> */}
+
+        <ParentCom />
 
       </div>
     </>
