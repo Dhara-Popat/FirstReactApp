@@ -19,6 +19,8 @@ import RefDemo from './component/Ref/RefDemo';
 import FocusInput from './component/Ref/FocusInput';
 import FRparentInput from './component/forwardingRef/FRparentInput';
 import ParentCom from './component/Pure component/ParentCom';
+import Composition from './component/Composition/Composition';
+import Prop from './component/PropTypes/Prop';
 // import About from './component/About';
 
 function App() {
@@ -76,7 +78,13 @@ function App() {
 
         {/* <FRparentInput /> */}
 
-        <ParentCom />
+        {/* <ParentCom /> */}
+
+        {/* <Composition>
+           <h2>Hello</h2>
+        </Composition> */}
+
+        <Prop name='User Name' id = {10} />
 
       </div>
     </>
