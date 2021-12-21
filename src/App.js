@@ -1,4 +1,6 @@
 import './App.css';
+import Click from './component/Event Handling/Click';
+import ClickTwo from './component/Event Handling/ClickTwo';
 // import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './component/Home';
 import Mounting from './component/LifecycleMethods/Mounting';
@@ -25,7 +27,11 @@ function App() {
 
         {/* <Updating /> */}
 
-        <Unmouting />
+        {/* <Unmouting /> */}
+
+        {/* <Click /> */}
+
+        <ClickTwo />
 
       </div>
     </>
