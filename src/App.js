@@ -9,6 +9,10 @@ import Mounting from './component/LifecycleMethods/Mounting';
 import Unmouting from './component/LifecycleMethods/Unmouting';
 import Updating from './component/LifecycleMethods/Updating';
 import PureComp from './component/Pure component/PureComp';
+import Container from './Rendering/Container';
+import RenderClickCounter from './Rendering/RenderClickCounter';
+import RenderHoverCounter from './Rendering/RenderHoverCounter';
+import User from './Rendering/User';
 // import About from './component/About';
 
 function App() {
@@ -36,9 +40,25 @@ function App() {
 
         {/* <ClickTwo /> */}
 
-        <Clickcounter />
+        {/* <Clickcounter text = 'Click : ' /> */}
 
-        <HoverCounter />
+        {/* <HoverCounter /> */}
+
+        <Container render={(count, incrementCount) =>
+          <RenderClickCounter
+            count={count}
+            incrementCount={incrementCount}
+          />
+        } />
+
+        <Container render={(count, incrementCount) =>
+          <RenderHoverCounter
+            count={count}
+            incrementCount={incrementCount}
+          />
+        } />
+
+        {/* <User render={(isLoggedIn) => isLoggedIn ? 'UserName' : 'Guest'} /> */}
 
       </div>
     </>

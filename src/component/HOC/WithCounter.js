@@ -1,8 +1,10 @@
 import React from 'react' 
 
-const UpdatedComponent = (OriginalComponent) => {
+// WithCounter is Updated component and wrappedCoponent is also Original Component.
+const WithCounter = (WrappedComponent, incrementNumber) => {
 
-    class NewComponent extends React.Component {
+    // New component also written in Pascal case.
+    class WithCounter extends React.Component {
 
         constructor(props) {
             super(props)
@@ -14,16 +16,20 @@ const UpdatedComponent = (OriginalComponent) => {
     
         incrementCount = () => {
             this.setState(PrevState => {
-                return {count: PrevState.count + 1}
+                return {count: PrevState.count + incrementNumber }
             })
         }
 
         render(){
-            return <OriginalComponent count = {this.state.count} incrementCount = {this.incrementCount} />
+            return <WrappedComponent 
+            count = {this.state.count} 
+            incrementCount = {this.incrementCount}
+            {...this.props} 
+            />
         }
 
     }
-    return NewComponent
+    return WithCounter // return New Component
 }
 
-export default UpdatedComponent
+export default WithCounter
