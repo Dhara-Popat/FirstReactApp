@@ -13,6 +13,11 @@ import Container from './component/Rendering/Container';
 import RenderClickCounter from './component/Rendering/RenderClickCounter';
 import RenderHoverCounter from './component/Rendering/RenderHoverCounter';
 import User from './component/Rendering/User';
+import ComA from './component/Context/ComA';
+import UserContext, { UserProvider } from './component/Context/UserContext';
+import RefDemo from './component/Ref/RefDemo';
+import FocusInput from './component/Ref/FocusInput';
+import FRparentInput from './component/forwardingRef/FRparentInput';
 // import About from './component/About';
 
 function App() {
@@ -44,21 +49,31 @@ function App() {
 
         {/* <HoverCounter /> */}
 
-        <Container render={(count, incrementCount) =>
+        {/* <Container render={(count, incrementCount) =>
           <RenderClickCounter
             count={count}
             incrementCount={incrementCount}
           />
-        } />
+        } /> */}
 
-        <Container render={(count, incrementCount) =>
+        {/* <Container render={(count, incrementCount) =>
           <RenderHoverCounter
             count={count}
             incrementCount={incrementCount}
           />
-        } />
+        } /> */}
 
         {/* <User render={(isLoggedIn) => isLoggedIn ? 'UserName' : 'Guest'} /> */}
+
+        {/* <UserProvider value="UserName">
+          <ComA />
+        </UserProvider> */}
+
+        {/* <RefDemo /> */}
+
+        {/* <FocusInput /> */}
+
+        <FRparentInput />
 
       </div>
     </>
