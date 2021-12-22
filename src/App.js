@@ -24,6 +24,7 @@ import Prop from './component/PropTypes/Prop';
 import Form from './component/ControlledComponent/Form';
 import TextArea from './component/ControlledComponent/TextArea';
 import MultipleInput from './component/ControlledComponent/MultipleInput';
+import FormControl from './component/ControlledComponent/FormControl';
 // import About from './component/About';
 
 function App() {
@@ -93,7 +94,9 @@ function App() {
 
         {/* <TextArea /> */}
 
-        <MultipleInput />
+        {/* <MultipleInput /> */}
+
+        <FormControl />
 
       </div>
     </>
