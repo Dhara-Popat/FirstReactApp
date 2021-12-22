@@ -21,6 +21,9 @@ import FRparentInput from './component/forwardingRef/FRparentInput';
 import ParentCom from './component/Pure component/ParentCom';
 import Composition from './component/Composition/Composition';
 import Prop from './component/PropTypes/Prop';
+import Form from './component/ControlledComponent/Form';
+import TextArea from './component/ControlledComponent/TextArea';
+import MultipleInput from './component/ControlledComponent/MultipleInput';
 // import About from './component/About';
 
 function App() {
@@ -84,7 +87,13 @@ function App() {
            <h2>Hello</h2>
         </Composition> */}
 
-        <Prop name='User Name' id = {10} />
+        {/* <Prop name='User Name' id = {10} /> */}
+
+        {/* <Form /> */}
+
+        {/* <TextArea /> */}
+
+        <MultipleInput />
 
       </div>
     </>
