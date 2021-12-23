@@ -42,7 +42,7 @@ function App() {
            </div>
           </Router> */}
 
-        {/* <Home /> */}
+        <Home />
 
         {/* <Mounting favColor = "Yellow" /> */}
 
