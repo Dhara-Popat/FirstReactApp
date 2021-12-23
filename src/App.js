@@ -25,6 +25,8 @@ import Form from './component/ControlledComponent/Form';
 import TextArea from './component/ControlledComponent/TextArea';
 import MultipleInput from './component/ControlledComponent/MultipleInput';
 import FormControl from './component/ControlledComponent/FormControl';
+import StrictModeEx from './component/StrictMode/StrictModeEx';
+import React from 'react';
 // import About from './component/About';
 
 function App() {
@@ -96,7 +98,11 @@ function App() {
 
         {/* <MultipleInput /> */}
 
-        <FormControl />
+        {/* <FormControl /> */}
+
+        <React.StrictMode>
+          <StrictModeEx />
+        </React.StrictMode>
 
       </div>
     </>
