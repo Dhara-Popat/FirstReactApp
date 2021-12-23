@@ -100,9 +100,9 @@ function App() {
 
         {/* <FormControl /> */}
 
-        <React.StrictMode>
+        {/* <React.StrictMode>
           <StrictModeEx />
-        </React.StrictMode>
+        </React.StrictMode> */}
 
       </div>
     </>
