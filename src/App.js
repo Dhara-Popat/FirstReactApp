@@ -30,7 +30,12 @@ import React from 'react';
 // import About from './component/About';
 import { Provider } from 'react-redux'
 import store from './Website Demo/redux/store';
-import NewsContainer from './Website Demo/redux/NewsContainer';
+// import NewsContainer from './Website Demo/redux/NewsContainer';
+import FirstProduct from './component/FirstProduct';
+import HookFirstProduct from './component/redux/HookFirstProduct';
+import SecondProduct from './component/SecondProduct';
+import NewFirstProduct from './component/redux/NewFirstProduct';
+import ItemContainer from './component/redux/ItemContainer';
 
 function App() {
   return (
@@ -108,8 +113,18 @@ function App() {
         </React.StrictMode> */}
 
     
-        <NewsContainer />
-      
+        {/* <NewsContainer /> */}
+
+        {/* <FirstProduct /> */}
+
+        {/* <HookFirstProduct /> */}
+        
+        <NewFirstProduct />
+
+        <SecondProduct />
+
+        <ItemContainer firstProduct />
+        <ItemContainer />
 
       </div>
     </Provider>

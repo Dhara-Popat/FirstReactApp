@@ -1,0 +1,1 @@
+export const BUY_FIRST_PRODUCT = 'BUY_FIRST_PRODUCT'
